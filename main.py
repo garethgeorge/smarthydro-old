@@ -5,15 +5,12 @@ from w1thermsensor import W1ThermSensor
 from lib.model import *
 from lib.conversions import c_to_f
 from flask import Flask, json, Response 
-
+import itertools 
+import io
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 import matplotlib.dates as mdate
-
-import itertools 
-import io
-
 
 tempSensors = W1ThermSensor()
 
